@@ -58,9 +58,13 @@ def _distributed_worker(
     assert torch.cuda.is_available(), "cuda is not available. Please check your installation."
     global_rank = machine_rank * num_gpus_per_machine + local_rank
     try:
-        dist.init_process_group(
-            backend="NCCL", init_method=dist_url, world_size=world_size, rank=global_rank
-        )
+        # dist.init_process_group(
+        #     backend="NCCL", init_method=dist_url, world_size=world_size, rank=global_rank
+        # )
+        dist.init_process_group(	backend="gloo", 
+										init_method=dist_url, 
+										world_size=world_size,   # 本机gpu的数目 
+										rank=global_rank	)   # rank是本机gpu的编号列表，如2个gpu即为 [0,1]
     except Exception as e:
         logger = logging.getLogger(__name__)
         logger.error("Process group URL: {}".format(dist_url))

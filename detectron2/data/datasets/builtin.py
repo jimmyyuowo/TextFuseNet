@@ -46,10 +46,10 @@ _PREDEFINED_SPLITS_COCO["coco"] = {
     "coco_2017_val_100": ("coco/val2017", "coco/annotations/instances_val2017_100.json"),
 
     # ocr datasets register    
-    "totaltext":("totaltext/train_images", "totaltext/train.json"),
-    "ctw1500":("ctw1500/train_images", "ctw1500/train.json"),
+    "totaltext":("totaltext/imgs", "totaltext/instances_training.json"),
+    "ctw1500":("ctw1500/imgs", "ctw1500/instances_training.json"),
     "icdar2013":("icdar2013/train_images", "icdar2013/train.json"),
-    "icdar2015":("icdar2015/train_images", "icdar2015/train.json"),
+    "icdar2015":("icdar2015/imgs", "icdar2015/instances_training.json"),
 
 }
 
@@ -107,8 +107,8 @@ _PREDEFINED_SPLITS_COCO_PANOPTIC = {
     ),
 }
 
-
-def register_all_coco(root="***"):  # put your root path of ocr datasets here
+def register_all_coco(root="datasets/"):  # put your root path of ocr datasets here
+#def register_all_coco(root="H:\\AI\\PythonWorkSpace\\DL\\mmocr\\datasets\\"):  # put your root path of ocr datasets here
     for dataset_name, splits_per_dataset in _PREDEFINED_SPLITS_COCO.items():
         for key, (image_root, json_file) in splits_per_dataset.items():
             # Assume pre-defined datasets live in `./datasets`.

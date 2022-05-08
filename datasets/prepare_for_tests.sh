@@ -20,3 +20,8 @@ for anno in instances_val2017_100 \
     wget $BASE/annotations/coco/$anno.json -O $dest
   }
 done
+
+# https://dl.fbaipublicfiles.com/detectron2/annotations/coco/instances_val2017_100.json
+# https://dl.fbaipublicfiles.com/detectron2/annotations/coco/person_keypoints_val2017_100.json
+# https://dl.fbaipublicfiles.com/detectron2/annotations/coco/instances_minival2014_100.json
+# https://dl.fbaipublicfiles.com/detectron2/annotations/coco/person_keypoints_minival2014_100.json

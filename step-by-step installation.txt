@@ -19,6 +19,7 @@ pip install matplotlib
 pip install cloudpickle
 pip install wheel
 pip install pycocotools
+pip install "pillow<7"
 
 # download our code from gitHub.
 git clone https://github.com/ying09/TextFuseNet.git
