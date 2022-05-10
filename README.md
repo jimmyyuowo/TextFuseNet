@@ -30,7 +30,12 @@ For semantic segmentation labels, we generate it according to the masks of text 
 # Results
 Example results of TextFuseNet on different datasets.
 
-![image](https://github.com/jimmyyuowo/TextFuseNet/blob/master/example_results.png)
+input:
+![image](input_images%5Cimg_o_nccuunit.jpg)
+
+output:
+![image](test_totaltext%5Cimg_o_nccuunit.jpg)
+
 
 Evaluation of TextFuseNet on different datasets with ResNet-101/ResNeXt-101 backbone:
 |Datasets|Model|Recall|Precision|F-measure|
@@ -52,5 +57,4 @@ Evaluation of TextFuseNet on different datasets with ResNet-50 backbone:
 |ctw1500|Paper|85.0|85.8|85.4|
 |icdar2013|Paper|89.5|95.1|92.2|
 |icdar2015|Paper|88.9|91.3|90.1|
-|icdar2019-ArT|This implementation|69.4|82.6|75.4|
 
