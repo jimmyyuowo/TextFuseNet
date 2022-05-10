@@ -31,10 +31,14 @@ For semantic segmentation labels, we generate it according to the masks of text 
 Example results of TextFuseNet on different datasets.
 
 input:
-![image](input_images%5Cimg_o_nccuunit.jpg)
+![image](https://github.com/jimmyyuowo/TextFuseNet/blob/main/input_images/img_o_nccuunit.jpg)
 
 output:
-![image](test_totaltext%5Cimg_o_nccuunit.jpg)
+image:
+![image](https://github.com/jimmyyuowo/TextFuseNet/blob/main/test_totaltext/img_o_nccuunit.jpg)
+
+txt:
+![txt](https://github.com/jimmyyuowo/TextFuseNet/blob/main/test_totaltext/res_img_o_nccuunit.txt)
 
 
 Evaluation of TextFuseNet on different datasets with ResNet-101/ResNeXt-101 backbone:
